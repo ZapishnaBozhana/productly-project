@@ -1,0 +1,89 @@
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v31-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v31-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v31-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v31-latin-700.woff2") format("woff2");
+}
+:root {
+  --color-main-text: #544837;
+  --color-section-text: #2f281e;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  width: 100%;
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+body {
+  color: var(--color-main-text);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+}
+.button {
+  font-size: 16px;
+  font-weight: 700;
+}
+/*Hero-section*/
+.hero-title {
+  color: var(--color-section-text);
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.hero-title + p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.section-title {
+  color: var(--color-section-text);
+  font-size: 36px;
+  font-family: 700;
+  line-height: 100%;
+}
+/*Tools-section*/
+.tools-title {
+  color: var(--color-section-text);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 100%;
+}
+/*Desing section*/
+.advantages-title {
+  color: var(--color-section-text);
+  font-size: 16px;
+  font-weight: 700;
+}
