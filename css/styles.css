@@ -32,6 +32,7 @@
 :root {
   --color-main-text: #544837;
   --color-section-text: #2f281e;
+  --color-accent: #ff9900;
 }
 * {
   box-sizing: border-box;
@@ -43,7 +44,7 @@ ul {
   width: 100%;
   max-width: 1248px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 16px 24px;
 }
 body {
   color: var(--color-main-text);
@@ -57,6 +58,61 @@ body {
   font-size: 16px;
   font-weight: 700;
 }
+/*Header*/
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.header-menu {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 20px;
+}
+.header_actions {
+  display: flex;
+  gap: 32px;
+}
+.header-button {
+  padding: 13px 26px;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.header-button:hover {
+  border: 2px solid;
+  border-color: var(--color-main-text);
+}
+.primery {
+  color: var(--color-section-text);
+  background-color: transparent;
+  border-color: #bcd0e5;
+}
+.secondary {
+  color: #ffffff;
+  background-color: var(--color-accent);
+}
+.header-menu li {
+  cursor: pointer;
+  color: var(--color-section-text);
+  font-weight: 400;
+}
+.header-menu li:hover {
+  color: var(--color-accent);
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
 /*Hero-section*/
 .hero-title {
   color: var(--color-section-text);
