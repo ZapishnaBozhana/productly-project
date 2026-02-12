@@ -143,6 +143,7 @@ p {
   color: var(--color-section-text);
   font-size: 36px;
   font-family: 700;
+  letter-spacing: 0px;
   line-height: 100%;
 }
 .hero-info {
@@ -163,15 +164,47 @@ p {
   background-color: var(--color-accent);
 }
 .btn-start:hover {
-  border: 1px solid var(--color-main-text);
+  border: 2px solid var(--color-main-text);
 }
 /*Tools-section*/
 .tools-title {
+  margin-top: 30px;
+  margin-bottom: 16px;
   color: var(--color-section-text);
   font-size: 22px;
   font-weight: 600;
   line-height: 100%;
 }
+.tools {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.tools-list {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.tools-icons:not(:last-of-type) {
+  margin-right: 260px;
+}
+.btn-main {
+  margin-top: 70px;
+  padding: 13px 40px;
+  color: #ffffff;
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  background-color: var(--color-accent);
+}
+.btn-main:hover {
+  border: 2px solid;
+  border-color: var(--color-main-text);
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
 /*Desing section*/
 .advantages-title {
   color: var(--color-section-text);
