@@ -54,9 +54,19 @@ body {
   line-height: 1.6;
   margin: 0;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
 .button {
   font-size: 16px;
   font-weight: 700;
+}
+.section {
+  padding: 50px 0;
 }
 /*Header*/
 .header-container {
@@ -114,7 +124,11 @@ body {
 }
 
 /*Hero-section*/
+.hero {
+  padding-top: 70px;
+}
 .hero-title {
+  margin-bottom: 30px;
   color: var(--color-section-text);
   font-size: 44px;
   font-weight: 700;
@@ -123,12 +137,33 @@ body {
 .hero-title + p {
   font-size: 18px;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 .section-title {
   color: var(--color-section-text);
   font-size: 36px;
   font-family: 700;
   line-height: 100%;
+}
+.hero-info {
+  max-width: 500;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 56px;
+}
+.btn-start {
+  cursor: pointer;
+  padding: 13px 44px;
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: var(--color-accent);
+}
+.btn-start:hover {
+  border: 1px solid var(--color-main-text);
 }
 /*Tools-section*/
 .tools-title {
