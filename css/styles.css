@@ -74,13 +74,13 @@ p {
   align-items: center;
   gap: 40px;
 }
-.header-nav {
+.nav {
   display: flex;
   align-items: center;
   flex-grow: 1;
   gap: 40px;
 }
-.header-menu {
+.nav-menu {
   display: flex;
   flex-grow: 1;
   justify-content: center;
@@ -118,7 +118,7 @@ p {
 .header-menu li:hover {
   color: var(--color-accent);
 }
-.header-logo {
+.nav-logo {
   display: flex;
   align-items: center;
 }
@@ -140,6 +140,7 @@ p {
   margin-bottom: 20px;
 }
 .section-title {
+  margin-bottom: 20px;
   color: var(--color-section-text);
   font-size: 36px;
   font-family: 700;
@@ -167,6 +168,10 @@ p {
   border: 2px solid var(--color-main-text);
 }
 /*Tools-section*/
+.tools {
+  text-align: center;
+  margin-bottom: 50px;
+}
 .tools-title {
   margin-top: 30px;
   margin-bottom: 16px;
@@ -175,18 +180,14 @@ p {
   font-weight: 600;
   line-height: 100%;
 }
-.tools {
-  text-align: center;
-  margin-bottom: 50px;
-}
 .tools-list {
   display: flex;
   align-items: center;
   flex-grow: 1;
   gap: 40px;
 }
-.tools-icons:not(:last-of-type) {
-  margin-right: 260px;
+.column {
+  width: 270px;
 }
 .btn-main {
   margin-top: 70px;
@@ -206,8 +207,25 @@ p {
 }
 
 /*Desing section*/
+.section-title + p {
+  margin-bottom: 40px;
+}
+.advantages-title + p {
+  margin-bottom: 30px;
+}
 .advantages-title {
   color: var(--color-section-text);
   font-size: 16px;
   font-weight: 700;
+  margin-bottom: 10px;
+}
+.design-container {
+  max-width: 525px;
+}
+.design-content {
+  display: flex;
+  justify-content: space-between;
+}
+.subtitle {
+  margin-bottom: 0;
 }
